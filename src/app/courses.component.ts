@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'courses',
     template: `
-        <input (keyup.enter)="onKeyUp($event)"/>
+        <input #email (keyup.enter)="onKeyUp(email.value)"/>
     ` // the event will be called only when keup.enter is recognized.
 })
 export class CoursesComponent {
-    onKeyUp($event){
-        console.log("ENTER was pressed");
+    onKeyUp(email){
+        console.log(email); // get the value entered in input (can also do $event.target.value).
+        // Template variables can help simplify code.
     }       
 }
