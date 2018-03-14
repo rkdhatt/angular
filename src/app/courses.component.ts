@@ -4,9 +4,17 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'courses',
     template: `
-        <button [style.backgroundColor]="isActive ? 'blue' : 'white'"]>Save</button>
+    <div (click)='onDivClick($event)'>
+        <button (click)="onSave($event)">Save</button>
+    </div>
     `
 })
 export class CoursesComponent {
-    isActive = true; // if false, then the 'active' class will not show in button.
+    onDivClick($event){
+        console.log("Div was clicked", $event);
+    }
+    onSave($event){
+        $event.stopPropagation(); // stops this event from bubbling up in DOM (i.e. won't see consol log from here)
+        console.log("Button was clicked", $event);
+    }        
 }
