@@ -10,6 +10,7 @@ import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     CourseComponent,
     AuthorsComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
