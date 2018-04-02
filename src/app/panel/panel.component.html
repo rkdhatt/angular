@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <ng-content select=".heading"> <!-- need to uniquely ID an element to appropriate ngContent.
+                                        Ex: header element will be used by ngContent with selector assigned to header css.-->
+
+    </ng-content>
+  </div>
+  <div class="panel-body">
+    <ng-content select=".body">
+
+    </ng-content>
+  </div>
+</div>

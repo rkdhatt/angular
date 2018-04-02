@@ -12,6 +12,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PanelComponent } from './panel/panel.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AuthorsComponent,
     SummaryPipe,
     FavoriteComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
