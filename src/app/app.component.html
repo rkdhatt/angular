@@ -1,3 +1,9 @@
-<like [likesCount]="tweet.likesCount"
-      [isActive]="tweet.isLiked">
-</like>
+<div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+<ng-template #coursesList>
+      List of Courses
+</ng-template>
+<ng-template #noCourses>
+      No courses yet
+</ng-template>
+<!-- angular 4 allows if else approach using ng-template
+in the div the condition is before the ';'. Clean and consistent-->
