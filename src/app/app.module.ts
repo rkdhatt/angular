@@ -14,6 +14,7 @@ import { TitleCasePipe } from './title-case.pipe';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { LikeComponent } from './like/like.component';
     FavoriteComponent,
     TitleCasePipe,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
